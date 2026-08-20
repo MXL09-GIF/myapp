@@ -8,7 +8,7 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.clock import Clock, mainthread
 from kivy.uix.popup import Popup
 import threading
-from kivy_webview import WebView
+# from kivy_webview import WebView
 
 
 # 解析线程
@@ -81,8 +81,8 @@ class MainLayout(BoxLayout):
         self.add_widget(self.status_label)
 
         # WebView网页播放器
-        self.webview = WebView()
-        self.add_widget(self.webview)
+        # self.webview = WebView()
+        # self.add_widget(self.webview)
 
     def show_msg(self, title, msg):
         popup = Popup(title=title, content=Label(text=msg), size_hint=(0.8,0.4))
