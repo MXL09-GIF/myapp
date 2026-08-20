@@ -7,7 +7,7 @@ package.domain = org.vipparse
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
-requirements = python3,kivy,kivy-webview
+requirements = python3,kivy
 
 android.permissions = INTERNET,ACCESS_NETWORK_STATE
 android.api = 33
