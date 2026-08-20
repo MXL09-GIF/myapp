@@ -9,9 +9,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build APK
-        uses: kivy/buildozer-action@main
+        uses: ArtemSBulgakov/buildozer-action@v1
         with:
-          buildozer-cmd: android debug
+          command: buildozer android debug
 
       - name: Upload generated APK
         uses: actions/upload-artifact@v4
