@@ -1,25 +1,12 @@
-[app]
-
-title = VIP影视解析
-package.name = vipparse
-package.domain = org.vipparse
-
+[ app ]
+title = 计算器
+package.name = myapp
+package.domain = org.myapp
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas
-
+source. include_exets = py,png,jpg,kv,atlas
 requirements = python3,kivy
-
-android.permissions = INTERNET,ACCESS_NETWORK_STATE
-android.api = 33
-android.ndk = 25b
-android.sdk = 28
-android.minapi = 21
-
-android.arch = arm64-v8a
-
-# 主题
-android.theme = dark
-
-[buildozer]
-log_level = 2
-warn_on_root = 1
+android.api = 36
+p4a.branch = develop
+android.ndk = 29
+orientation = portrait
+fullscreen = 0
