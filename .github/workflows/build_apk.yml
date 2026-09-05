@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
+    env:
+      ANDROID_HOME: ${{ github.workspace }}/.buildozer/android/platform/android-sdk
     steps:
       - name: 拉取代码
         uses: actions/checkout@v4
@@ -17,6 +19,8 @@ jobs:
 
       - name: Buildozer编译APK
         uses: digreatbrian/buildozer-action@v2
+        env:
+          BUILDOZER_ACCEPT_LICENSE: "y"
         with:
           python-version: "3.10"
           buildozer-cmd: buildozer -v android debug
