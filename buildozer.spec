@@ -10,6 +10,7 @@ version = 1.0
 android.api = 33
 android.ndk = 25b
 android.accept_sdk_license = True
+android.python_version = 3.10
 
 android.minapi = 21
 orientation = portrait
