@@ -2,7 +2,7 @@
 title = 计算器
 [app]
 #标题允许中文 title language is not limited
-title = appname
+title = 计算机
 package.name = packagename
 
 #release模式不能用org.test 'org.test' can't be used in release mode
